@@ -1,4 +1,4 @@
-package patronfabricaadstracta;
+	package patronfabricaadstracta;
 
 import java.util.Scanner;
 
