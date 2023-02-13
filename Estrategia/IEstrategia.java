@@ -14,7 +14,7 @@ public class IEstrategia {
 	        IEstrategia operacion=null;
 	        do{
 	            opcion = Menu();
-	            if(opcion!=5){
+	            if(opcion!=6){
 	                System.out.println("Ingrese el primer valor: ");
 	                x = in.nextDouble();
 	                System.out.println("Ingrese el segundo valor: ");
@@ -37,12 +37,16 @@ public class IEstrategia {
 	                    operacion=new EstrategiaDivision();
 	                    break;
 	                }
+	                case 5:{
+	                	operacion=new EstrategiaAreaCuadrado();
+	                	break;
+	                }
 	            }
-	            if(opcion!=5){
+	            if(opcion!=6){
 	                System.out.println("Resultado: "+operacion.algoritmo(x, y));
 	            }
 	            
-	        }while(opcion!=5);
+	        }while(opcion!=6);
 	        
 	    }
 	    
@@ -55,12 +59,13 @@ public class IEstrategia {
 	            System.out.println("2. Restar");
 	            System.out.println("3. Multiplicar");
 	            System.out.println("4. Dividir");
-	            System.out.println("5. Salir");
+	            System.out.println("5. Area del cuadrado");
+	            System.out.println("6. salir");
 	            opcion = in.nextInt();
-	            if(opcion < 1 || opcion > 5){
+	            if(opcion < 1 || opcion > 6){
 	                System.out.println("Opcion incorrecta, netnte nuevamente");
 	            }
-	        }while(opcion < 1 || opcion > 5);
+	        }while(opcion < 1 || opcion > 6);
 	        return opcion;
 	    }
 
