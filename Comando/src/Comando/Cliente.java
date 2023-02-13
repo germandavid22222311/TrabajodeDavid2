@@ -26,16 +26,16 @@ public class Cliente {
         Scanner in = new Scanner(System.in);
         do{
             System.out.println("Seleccione una opcion:");
-            System.out.println("1. Encender el equipo");
-            System.out.println("2. Apagar el equipo");
-            System.out.println("3. Subir el volumen");
-            System.out.println("4. Bajar el volumen");
-            System.out.println("5. Carbiarmusica");
+            System.out.println("1. Encender ");
+            System.out.println("2. Apagar");
+            System.out.println("3. Subir volumen");
+            System.out.println("4. Bajar volumen");
+            System.out.println("5. Cambiarmusica");
            
         
             opcion = in.nextInt();
             if(opcion < 1 || opcion > 5){
-                System.out.println("Opcion incorrecta, netnte nuevamente");
+                System.out.println("Opcion incorrecta, intente nuevamente");
             }
         }while(opcion < 1 || opcion > 5);
         return opcion;
