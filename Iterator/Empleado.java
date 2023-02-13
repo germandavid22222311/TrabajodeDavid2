@@ -10,7 +10,7 @@ public class Empleado {
 	}
 	
 	public String getName() {
-		return nombregg;
+		return nombregg33;
 	}
 	public void print() {
 		System.out.println("Nombre: " + nombre+ "Division: " + division);
