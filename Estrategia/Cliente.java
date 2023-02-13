@@ -20,9 +20,9 @@ public class Cliente {
         do{
             opcion = Menu();
             if(opcion!=6){
-                System.out.println("Ingrese el primer valor: ");
+                System.out.println("Ingrese primer valor: ");
                 x = in.nextDouble();
-                System.out.println("Ingrese el segundo valor: ");
+                System.out.println("Ingrese segundo valor: ");
                 y = in.nextDouble();
                 }
             switch(opcion){
@@ -68,8 +68,9 @@ public class Cliente {
             System.out.println("6. Salir");
             opcion = in.nextInt();
             if(opcion < 1 || opcion > 6){
-                System.out.println("Opcion incorrecta, netnte nuevamente");
+                System.out.println("Opcion incorrecta, intente nuevamente");
             }
+            //Editado por evelyn
         }while(opcion < 1 || opcion > 6);
         return opcion;
     }
