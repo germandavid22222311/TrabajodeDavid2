@@ -17,6 +17,8 @@ public class Singleton  {
         }
         else{
             System.out.println("No se puede crear el objeto "+ nombre + " porque ya existe un objeto de la clase SoyUnico");
+            System.out.println("El objeto creado"+ nombre + "porque no existe la clase de ser unico");
+            
         }
         
         return Singleton;

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FabricaPizza implements IFabrica{
 private IElementoMasa masa;
 private IElementoSabor sabor;
+
 private static Scanner in = new Scanner(System.in);
 
 @Override
@@ -14,7 +15,8 @@ public void crearElementos() {
     do{
         System.out.println("Selecciones el tipo de masa para su pizza");
         System.out.println("1. Masa regular");
-        System.out.println("2. Masa con bordes de queso");
+        System.out.println("2. Masa con bordes de queso"); 
+        System.out.println("3. Masa con bordes de bocadillo");
         opcion = in.nextInt();
     }while(opcion < 1 || opcion>2);
     
@@ -22,6 +24,8 @@ public void crearElementos() {
         masa = new MasaNormal();
     else
         masa = new MasaQueso();
+    
+    	masa = new MasaBocadillo();
     
     masa.producir();
     

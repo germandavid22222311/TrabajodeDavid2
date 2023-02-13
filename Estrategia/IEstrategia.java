@@ -55,22 +55,23 @@ public class IEstrategia {
 	        in = new Scanner(System.in);
 	        do{
 	            System.out.println("Seleccione una de las siguientes opciones:");
-	            System.out.println("1. Sumar");
-	            System.out.println("2. Restar");
-	            System.out.println("3. Multiplicar");
-	            System.out.println("4. Dividir");
-	            System.out.println("5. Area del cuadrado");
-	            System.out.println("6. salir");
+	            System.out.println("1. Sumar1");
+	            System.out.println("2. Restar2");
+	            System.out.println("3. Multiplicar3");
+	            System.out.println("4. Dividir4");
+	            System.out.println("5. Area del cuadrado5");
+	            System.out.println("6. salir6");
 	            opcion = in.nextInt();
 	            if(opcion < 1 || opcion > 6){
-	                System.out.println("Opcion incorrecta, netnte nuevamente");
+	                System.out.println("Opcion incorrecta, intente nuevamente");
 	            }
 	        }while(opcion < 1 || opcion > 6);
 	        return opcion;
 	    }
 
 		public double algoritmo(double x, double y) {
-			// TODO Auto-generated method stub
+			// Cambiado por evelyn
+			//lunes
 			return 0;
 		}
 	}
