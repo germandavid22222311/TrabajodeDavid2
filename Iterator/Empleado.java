@@ -6,11 +6,11 @@ public class Empleado {
 	
 	public Empleado(String n, String d) {
 		nombre = n;
-		division = d;
+		suma = d;
 	}
 	
 	public String getName() {
-		return nombre;
+		return nombregg;
 	}
 	public void print() {
 		System.out.println("Nombre: " + nombre+ "Division: " + division);
